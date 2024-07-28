@@ -332,4 +332,12 @@ section {
   .tutorial-desc {
     font-size: 10px;
   }
+
+  .section-heading {
+    font-size: 32px;
+  }
+
+  .schedule-habits {
+    flex-direction: column;
+  }
 }
