@@ -274,7 +274,7 @@ section {
   padding: 30px 30px 30px 50px;
   background: rgb(34, 34, 34);
   display: flex;
-  gap: 160px;
+  gap: 190px;
   justify-content: space-between;
 }
 
@@ -292,21 +292,22 @@ section {
   text-align: left;
   margin: 0;
 }
-/* .image-section img {
+
+/* .image-section {
   max-width: 100%;
   border-radius: 10px;
   height: auto;
-  object-fit: cover;
-  object-position: center;
+  object-fit: none;
+  object-position: 66% 33%;
 } */
 
 .image-section {
-  max-width: 40%;
-  min-width: 250px;
+  max-width: 45%;
+  min-width: 350px;
   height: 280px;
-  background-image: url("/images/run.jpg");
-  background-size: 200%;
-  background-position: center;
+  background-image: url(/images/run.jpg);
+  background-size: 300%;
+  background-position: 70% 34%;
   border-radius: 18px;
 }
 /* Media Queries */
