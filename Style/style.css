@@ -305,7 +305,8 @@ section {
   max-width: 45%;
   min-width: 350px;
   height: 280px;
-  background-image: url(/images/run.jpg);
+  /* background-image: url(/images/run.jpg); */
+  background-image: url(../images/run.jpg);
   background-size: 300%;
   background-position: 70% 34%;
   border-radius: 18px;
