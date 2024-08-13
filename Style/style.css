@@ -33,7 +33,7 @@ body {
   font-weight: 800;
 }
 
-.texts .section-heading {
+.section-heading {
   color: white;
   font-size: 48px;
   font-weight: 900;
@@ -441,6 +441,103 @@ select {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* Latest blog */
+
+.latest-blog .section-heading {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.latest-blog .section-heading::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #f84c34;
+  margin: 10px auto 0;
+}
+
+.blog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog .column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 480px;
+}
+
+.blog .column img {
+  width: 100%;
+  height: 100%;
+}
+
+.headline {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.headline .date {
+  width: 80px;
+  height: 80px;
+  background-color: #e6533c;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.date .mm {
+  text-transform: uppercase;
+}
+
+.headline .headline-text h3 {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-size: 16px;
+  /* margin-bottom: -40; */
+}
+
+.headline-text span {
+  font-size: 12px;
+  margin-right: 15px;
+}
+
+.headline-text .icon-color,
+span {
+  cursor: pointer;
+}
+
+.icon-color {
+  color: #dee2e6;
+}
+
+.column .section-desc {
+  text-align: justify;
+}
+
+.readMore {
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid #e6533c;
+  color: #e6533c;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.readMore:hover {
+  background-color: #e6533c;
+  color: white;
+}
+
 .bg-color2 {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -656,11 +753,20 @@ hr {
     margin-bottom: 24px;
   }
 
+  .blog {
+    flex-direction: column;
+  }
+
+  .blog .column {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
   footer {
     margin-top: 66px;
   }
 
-  .columns {
+  footer .columns {
     flex-direction: column;
     gap: 20px;
   }
